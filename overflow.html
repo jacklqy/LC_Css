@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+          body {        
+                background-color: lightgreen;    
+            } 
+         @media screen and (max-width: 780px) {    
+            body {        
+                background-color: lightgreen;    
+            } 
+         }
+
+        @media screen and (min-width: 780px) {    
+            body {        
+                background-color: pink;    
+            } 
+        }
+       
+        div.box{
+            /* width: 200px;
+            height: 200px; */
+            border: 1px solid #000;
+            /* overflow:scroll */
+            overflow-y: scroll;
+            /* float: left; */
+            margin: 0 auto;
+            box-shadow: 10px 10px 5px grey;
+             /* transform: translate(50px, 100px); */
+             /* transform: rotate(20deg); */
+             /* transform: scale(2, 3); */
+             /* transform: skewX(50deg); */
+             /* transform: rotateZ(70deg); */
+        }
+/* 
+        div{
+            transition:width 2s;
+            -webkit-transition:width 2s;
+        }
+
+        div:hover{
+            width:300px;
+        } */
+
+        div {
+            /* width: 100px;
+            height: 100px; */
+            /* background: red; */
+            -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+            transition: width 2s, height 2s, transform 2s;
+            /* transition-timing-function: linear; */
+            transition-delay: 1s;
+            animation:myfirst 5s;
+            -webkit-animation:myfirst 5s; /* Safari and Chrome */
+        }
+
+        div:hover {
+            width: 300px;
+            height: 300px;
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+
+        div{
+            width:100px;
+            height:100px;
+            background:red;
+            position:relative;
+            animation:myfirst 5s;
+            -webkit-animation:myfirst 5s; /* Safari and Chrome */
+        }
+
+@keyframes myfirst
+{
+	0%   {background:red; left:0px; top:0px;}
+	25%  {background:yellow; left:200px; top:0px;}
+	50%  {background:blue; left:200px; top:200px;}
+	75%  {background:green; left:0px; top:200px;}
+	100% {background:red; left:0px; top:0px;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+	0%   {background:red; left:0px; top:0px;}
+	25%  {background:yellow; left:200px; top:0px;}
+	50%  {background:blue; left:200px; top:200px;}
+	75%  {background:green; left:0px; top:200px;}
+	100% {background:red; left:0px; top:0px;}
+}
+
+/*         
+            @keyframes myfirst
+            {
+                from {background :pink;}
+                to {background:yellow;}
+            }
+
+            @-webkit-keyframes myfirst
+            {
+                from {background:pink;}
+                to {background:yellow;}
+            } */
+        P{
+            background-color:pink ;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            text-shadow: 2px 2px 3px red;
+        }
+        .clear{
+            clear:both;
+        }
+
+        div span:first-child{
+            color: red;
+        }
+
+        div span:last-child{
+            color:blue;
+        }
+
+        .box:before {
+         content:url(logo.png);
+        }
+    </style>
+</head>
+<body>
+
+    <img src="./logo.png" alt="">
+    <img src="https://www.zhaoxiedu.net/static/imgs/companyInfo/Logo1.png" alt="">
+    <img src="/logo.png" alt="">
+
+    <div class="box">
+        naTinaTinaTinaTinaTinaTinaTinaTinaTinaTinaTinaTinaTinaTinaTinaTinaTinaTinaTinaTinaTinaTinaTinaTinaTinaTinaTina
+    </div>
+    <div  class="clear"></div>
+
+    <p>我是一个常规的P标签</p>
+
+
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</body>
+</html>

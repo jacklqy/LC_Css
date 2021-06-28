@@ -1,0 +1,110 @@
+
+a {text-decoration:none;}
+
+p {text-indent:50px;}
+body{
+    width: 500px;
+    font-size:20px;
+    font-weight:600
+}
+div {
+    width: 50%;
+    max-width: 800px;
+    height: 250px;
+    color:orange;
+    text-align: right;
+}
+
+.div1,
+.div2{
+    width: 100px;
+    height: 100px;
+    background: olive;
+}
+
+.div1{
+    margin: 20px;
+    width: 300px;
+}
+img{
+    margin: 30px;
+    width: 30px;
+}
+.img2{
+    margin: 50px;
+}
+.div2{
+    margin: 30px;
+}
+
+
+#box1 {
+    background-color:pink;
+    border: 5px solid red;
+    /* border-radius: 50%; */
+    /* padding: 10px;
+    margin: 10px; */
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px; */
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 0 0;
+
+}
+
+/* #box1  {border-style: dotted;} */
+/* #box1  {border-style: none;} */
+
+body {
+    /* background-image:url('./logo.png');
+    background-repeat:no-repeat;
+    background-position:100px 300px; */
+    background: url('./logo.png') no-repeat 100px 100px;
+    background-size:100px
+}
+.title{
+
+}
+p{
+    background-color: aquamarine;
+}
+
+
+div , #box, .title{
+
+}
+
+
+input[name="username"]{
+
+}
+
+.title{
+
+}
+
+*{
+  
+}
+
+
+body span{
+
+}
+
+div span{
+
+}
+
+body>span{
+
+}
+
+div + p{
+
+}
+
+div ~ p{
+    
+}

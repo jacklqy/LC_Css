@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 1300px;
+            background: pink;
+            position: relative;
+            top: 30px;
+            left: 10px;
+        }
+        p{
+            background-color: violet;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        span{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        我是一个盒子
+        <div>
+            <span>我是子子级</span>
+        </div>
+    </div>
+    <p>我是一个段落</p>
+</body>
+</html>
