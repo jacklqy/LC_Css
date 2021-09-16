@@ -1,7 +1,7 @@
 # LC_Css
 # css 布局的几种方式
 ## 1 table 布局（现在用得少）
-## 2 flex 布局
+## 2 flex 布局  http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
 2.1 盒模型
 2.2 display / poistion
 2.3 flexbox 布局
