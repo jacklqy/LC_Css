@@ -5,6 +5,8 @@
 2.1 盒模型
 2.2 display / poistion
 2.3 flexbox 布局
+![image](https://user-images.githubusercontent.com/26539681/137415369-d32f8018-bd0d-429a-9be3-9bdd4a4b330e.png)
+
 ## 3 float 布局
 3.1 高度塌陷
 3.2 两栏布局
